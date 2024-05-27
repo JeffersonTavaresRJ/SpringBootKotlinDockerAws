@@ -1,0 +1,35 @@
+cors:
+  originPatterns: http://localhost:3000,http://localhost:81,http://localhost:8080,https://erudio.com.br
+file:
+  upload-dir: /Code/UploadDir
+security:
+  jwt:
+    token:
+      secret-key: 53cr37
+      expired-length: 36000000
+server:
+  port: 81
+spring:
+  application:
+    name: rest-spring-boot-and-kotlin
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/db_erudio
+    username: root
+    password: root
+  jpa:
+    hibernate:
+      ddl-auto: none
+  servlet:
+    multipart:
+      enabled: true
+      file-size-threshold: 2KB
+      max-file-size: 200MB
+      max-request-size: 215MB
+spring-doc:
+   paths-to-match:
+     - /api/**/**
+     - /auth/**
+   use-root-path: true
+
+
