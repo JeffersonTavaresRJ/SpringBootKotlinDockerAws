@@ -1,11 +1,7 @@
 cors:
   originPatterns: http://localhost:3000,http://localhost:81,http://localhost:8080,https://erudio.com.br
 file:
-<<<<<<< HEAD
-  upload-dir: /Code/UploadDir_
-=======
   upload-dir: /home/runner/work/SpringBootKotlinDockerAws/SpringBootKotlinDockerAws/rest-spring-boot-and-kotlin/UploadDir
->>>>>>> main
 security:
   jwt:
     token:
@@ -35,5 +31,4 @@ spring-doc:
      - /api/**/**
      - /auth/**
    use-root-path: true
-
 
