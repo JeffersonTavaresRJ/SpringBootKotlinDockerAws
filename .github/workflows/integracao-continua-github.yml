@@ -40,7 +40,7 @@ jobs:
 
     - name: Docker compose build
       working-directory: ./
-      run: mvn clean package
+      run: docker compose build
       
     - name: Push to DockerHub container registry
       run:
