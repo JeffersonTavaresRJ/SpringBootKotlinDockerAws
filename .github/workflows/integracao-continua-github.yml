@@ -43,7 +43,7 @@ jobs:
       run: docker compose build
       
     - name: Push to DockerHub container registry
-      run:
+      run: |
         docker tag ${{ secrets.DOCKER_USERNAME }}/rest-spring-boot-and-kotlin:latest ${{ secrets.DOCKER_USERNAME }}/rest-spring-boot-and-kotlin:${{github.run_id}}
         
         docker push ${{ secrets.DOCKER_USERNAME }}/rest-spring-boot-and-kotlin:${{github.run_id}}
